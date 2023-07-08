@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video Conference</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <body>
+    <div class="image" style="float: left;"><img src="https://www.agora.io/en/wp-content/uploads/2023/05/video-call-hero.webp" style="margin-top: 100px;"> </div> 
+    <!-- <div class="container" style="margin-left: 400px; background-color: white;">
+        <div class="dashboard">
+            <h1>Welcome, {{name}}!</h1>
+            <a href="{% url 'meeting' %}" class="button" style="width: 300px;">New Meeting</a>
+            <a href="{% url 'join_room' %}" class="button" style="width: 300px;">Join Meeting</a>
+            <a href="{% url 'logout' %}" class="button" style="width: 300px;">Logout</a>
+        </div>
+    </div>  -->
+    <div class="container" style="margin-left: 400px;">
+        <!-- <div class="dashboard" style="background-color: #fff; height: 600px; width: 500px;"> -->
+        <div class="login form" style="height: 400px;">
+          <header>Welcome, {{name}}!</header>
+          <br>
+            <a href="{% url 'meeting' %}" class="btnn" style="width: 350px; color: #fff; font-size: 18px;">New Meeting</a>
+            <a href="{% url 'join_room' %}" class="btnn" style="width: 350px; color: #fff; margin-top: 20px; font-size: 18px;">Join Meeting</a>
+            <a href="{% url 'logout' %}" class="btnn" style="width: 350px; color: #fff; margin-top: 20px; font-size: 18px;">Logout</a>
+        </div>
+    </div>   
+  </body>
+</head>
+</html>
